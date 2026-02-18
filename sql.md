@@ -39,6 +39,11 @@ Imperative örnek:
 Declarative örnek:
 “Şu koşula uyan kayıtları getir.”
 
+
+## Dördüncü Nesil Programlama Dili
+SQL daha az kod yazarak ve daha çok belirli şablonlar kullanan bir programlama dili olarak dördüncü nesil bir programlama dilidir. Yapılması istenen işlemin her basamağının ayrıca kodlanmasına gerek duyulmaz.
+
+---
 ## References
 
 1. [W3SchoolsSQL](https://www.w3schools.com/sql/)
