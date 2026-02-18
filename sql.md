@@ -1,8 +1,23 @@
-# SQL
+# SQL (Structured Query Language) Nedir?
 
 Sql , `declarative` bir programlama dilidir. **- Structered Query Language**
+**Bir Programlama dili olarak SQL**
+
+SQL üzerine konuşulurken ilk olarak şu soru akla gelir. SQL bir programlama dili midir? Evet, SQL ilişkisel veritabanı yönetim sistemleri ile ilişki kurmamızı sağlayan bir `declarative` **bildirimsel** bir programlama dilidir.
+
+**Bildirimsel Yaklaşım**
+Aşağıdaki örnek bir SQL sorgusu bulabilirsiniz.
+
+```sql
+SELECT title FROM book
+WHERE page_number > 200;
+```
+
+
 
 **peki declarative programlama dili nedir?**
+
+Yukarıdaki sorgumuzda, veritabanındaki book tablosundan sayfa sayısı 200 den daha fazla olan kitapları görmek istiyoruz. Burada biz işin sonuç kısmıyla ilgileniyoruz. SQL, DBMS ile nasıl çalışır, arka tarafta yapılan işlemin bizim açımızdan önemi yoktur. Bundan dolayı SQL declarative yani bildirimsel, beyan edici bir yaklaşıma sahiptir.
 
 
 🧠 Declarative Programlama Nedir?
@@ -23,3 +38,7 @@ Imperative örnek:
 “Listeyi dolaş, filtrele, eşleşenleri topla.”
 Declarative örnek:
 “Şu koşula uyan kayıtları getir.”
+
+## References
+
+1. [W3SchoolsSQL](https://www.w3schools.com/sql/)
