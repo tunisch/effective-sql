@@ -5,6 +5,8 @@ Sql , `declarative` bir programlama dilidir. **- Structered Query Language**
 
 SQL üzerine konuşulurken ilk olarak şu soru akla gelir. SQL bir programlama dili midir? Evet, SQL ilişkisel veritabanı yönetim sistemleri ile ilişki kurmamızı sağlayan bir `declarative` **bildirimsel** bir programlama dilidir.
 
+- SQL komutlarının büyük harf - küçük harf duyarlılıkları yoktur. **(Case Insensitive)**
+
 **Bildirimsel Yaklaşım**
 Aşağıdaki örnek bir SQL sorgusu bulabilirsiniz.
 
