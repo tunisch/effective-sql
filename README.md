@@ -6,10 +6,9 @@ This section contains homework assignments where we work on our database `dvdren
 
 <img width="657" height="495" alt="image" src="https://github.com/user-attachments/assets/bdc4f11d-13ed-4dd9-b399-d193d49aebfd" />
 
-2. [HW-2](hw-2.md)
+2. [HW-2](hw-2.sql)
 
 <img width="655" height="461" alt="image" src="https://github.com/user-attachments/assets/59362286-2c2b-4f13-9a9a-e2765a8a521e" />
-
 
 3. [HW-3](hw-3.md)
 
