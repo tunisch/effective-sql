@@ -16,7 +16,7 @@ Burada temel olarak yaptığımız belirli aralıkta bulunan verileri sıralamak
 ```sql
 SELECT <sütun_adı>, <sütun_adı>, ...
 FROM <tablo_adı>
-WHERE <koşul>;
+WHERE <sütun_adı> BETWEEN <kucuk_koşul> AND <buyuk_koşul> ;
 ```
 **BETWEEN Örnek Kullanım**
 ```sql
