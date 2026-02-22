@@ -29,6 +29,16 @@ WHERE replacement_cost = 14.99;
 
 Bu sorgumuzda `dvdrental` veritabanında bulunan `film` tablosundaki `title` ve `replacement_cost` sütunlarında bulunan verileri çekiyoruz ancak bu kez tüm verileri değil `replacement_cost = 14.99` koşulunu sağlayan verileri alıyoruz.
 
+```sql
+SELECT * FROM actor
+WHERE first_name = 'Penelope';
+```
+
+Bu sorgumuzda `dvdrental` veritabanında bulunan `actor` tablosundaki `butun sutunlarda`(*)  bulunan verileri
+çekiyoruz ancak bu kez tüm verileri değil `first_name = 'Penelope'` koşulunu sağlayan verileri alıyoruz.
+
+> `=` diger programlama dillerinden farkli olarak `== ` boyle degildir ve Stringlerde burada `' '` tek tirnak olarak verilir yani `" "` cift tirnak kullanilmaz.⚠️
+
 ## Karşılaştırma Operatörleri
 
 Yukarıda da bahsettiğimiz üzere `WHERE` anahtar kelimesi koşul ile birlikte çalışır. Aşağıda SQL ile birlikte kullanılan karşılaştırma operatörlerini görebilirsiniz.
