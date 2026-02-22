@@ -2,7 +2,7 @@
 
 This section contains homework assignments where we work on our database `dvdrental` and do assignments for SQL fundamentals 1.
 
-1. [HW-1](hw-1.md)
+1. [HW-1](hw-1.sql)
 
 <img width="657" height="495" alt="image" src="https://github.com/user-attachments/assets/bdc4f11d-13ed-4dd9-b399-d193d49aebfd" />
 
