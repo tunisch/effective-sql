@@ -22,16 +22,33 @@ Burada kullanılan `%` karakteri **sıfır, bir veya daha fazla karakteri** tems
 *Çünkü:*
 - 'M' → ilk harf
 - '%' → ondan sonra sıfır, bir veya daha fazla karakter olabilir
+
 Yani 'M%' şu demektir:
 > “M ile başlasın, sonrası ne olursa olsun.”
+
+```sql
+SELECT * FROM customer
+WHERE first_name LIKE 'M%';
+```
+
 **Örnek eşleşenler:**
 - Mary ✔
 - Mark ✔
 - M ✔ (çünkü % sıfır karakteri de temsil eder)
 - Michael ✔
 
+**NOTE:2**
+Eger `%m` olarak kullanilsaydi da son harfi m ile bitenleri getirecekti !⚠️
+
+```sql
+SELECT * FROM customer
+WHERE first_name LIKE '%m';
+```
+
 ## Wildcard karakteri `_`
+
 Bir karakteri temsil eder.
+
 **Ornegin:**
 ```sql
 WHERE first_name LIKE 'M_';
@@ -42,30 +59,69 @@ Bu sadece 2 harfli isimleri getirir:
 - Mi ✔
 - Mia ❌ (3 harf)
 - Mary ❌ (4 harf)
+
 Yani _ → tek karakter
+```md
 __ → iki karakter
 ___ → üç karakter
+```
 
 **Örnek 1:**
 M ile başlasın, toplam 3 harf olsun:
+
 ```sql
 WHERE first_name LIKE 'M__';
 ```
+
 Bu 3 harfli isimleri getirir:
 - Max ✔
 - Mia ✔
 - Mel ✔
 
 **Örnek 2:**
-İkinci harfi “a” olan isimler: ⚠️
+
+İkinci harfi `a` olan isimler: ⚠️
+
 ```sql
 WHERE first_name LIKE '_a%';
 ```
-
 Eşleşenler:
 - Mark ✔
 - Sara ✔
 - David ✔
+
+**Ornek3**
+bas harfi `A` ile baslayan son harfi `y` olan isimler:
+
+```sql
+SELECT * FROM customer
+WHERE first_Name LIKE 'A%y';
+```
+
+**Ornek4**
+`And operatoru` ile beraber kullanimi  
+
+```sql
+SELECT * FROM customer
+WHERE first_Name LIKE 'A%' AND last_name LIKE 'A%';
+```
+
+**Ornek5**
+`NOT operatoru` ile beraber kullanimi 
+
+```sql
+SELECT * FROM customer
+WHERE first_name NOT LIKE 'A%';
+```
+
+**NOTE:3**
+```md
+`--` tilda isareti de `LIKE` demektir
+`--*` tilda asterix isaretide `ILIKE` demek olur.
+`!--*` bu da `NOT ILIKE` anlamina gelir
+`!--` ya da bu da `NOT LIKE` anlamina gelir ve boyle de kullanilabilir.
+```
+---
 
 ## 🎯 KISA ÖZET
 
