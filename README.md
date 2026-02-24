@@ -38,14 +38,14 @@ This section contains homework assignments where we work on our database `dvdren
 
 <img width="601" height="601" alt="image" src="https://github.com/user-attachments/assets/c00b2b24-3b05-4b4e-958f-077e5d85701e" />
 
-10. [HW-8](hw-10.md)
+10. [HW-10](hw-10.md)
 
 <img width="598" height="622" alt="image" src="https://github.com/user-attachments/assets/1771189e-adde-4c49-bea9-fb87cddf96fb" />
 
-11. [HW-8](hw-11.md)
+11. [HW-11](hw-11.md)
 
 <img width="600" height="619" alt="image" src="https://github.com/user-attachments/assets/e7a80848-819c-46aa-80f3-374c018ed4ce" />
 
-12. [HW-8](hw-12.md)
+12. [HW-12](hw-12.md)
 
 <img width="596" height="527" alt="image" src="https://github.com/user-attachments/assets/52611894-3ac1-49c7-857c-d060d2dc09ec" />
