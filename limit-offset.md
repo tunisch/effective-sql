@@ -16,7 +16,7 @@ LIMIT 10;
 Yukarıdaki sorgumuzda da görmüş olduğunuz gibi önce koşullamayı, sonra gruplamayı en son ise **LIMIT** kullanarak istediğimiz veri sayısını belirttik.
 
 ## OFFSET
-Bazı durumlarda sonuç olarak gördüğümüz veri grubu içerisinden bazılarını "pass" geçmek isteriz. Yukarıdaki senaryomuzu tekrar düşünelim, **dvdrental** veritabanında bulunan **film** tablosundan B ile başlayan filmleri uzunluklarına göre sıralayalım ancak en uzun 6 filmi "pass" geçelim ve sonrasındaki 4 filmi sıralayalım. Bu durumda **LIMIT** 4 ve **OFFSET** 6 olacak.7
+Bazı durumlarda sonuç olarak gördüğümüz veri grubu içerisinden bazılarını "pass" geçmek isteriz. Yukarıdaki senaryomuzu tekrar düşünelim, **dvdrental** veritabanında bulunan **film** tablosundan B ile başlayan filmleri uzunluklarına göre sıralayalım ancak en uzun 6 filmi "pass" geçelim ve sonrasındaki 4 filmi sıralayalım. Bu durumda **LIMIT** 4 ve **OFFSET** 6 olacak.
 
 ```sql
 SELECT *
