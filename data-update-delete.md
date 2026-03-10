@@ -69,3 +69,9 @@ WHERE <koşul_adı>;
 DELETE FROM my_apps
 WHERE name = 'Tresom';
 ```
+---
+
+## REFERNCES
+1. [W3Schools SQL UPDATE](https://www.w3schools.com/sql/sql_update.asp)
+2. [W3Schools SQL DELETE](https://www.w3schools.com/sql/sql_delete.asp)
+3. []
