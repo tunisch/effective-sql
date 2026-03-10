@@ -84,15 +84,17 @@ Yeni tabloya eski tablodan veri eklemek icin INSERT INTO ve SELECT anahtar kelim
 INSERT INTO <new_table_name>
 SELECT * FROM <old_table_name>
 ```
-## Var olan Tablodan verilerileriyle beraber yeni tablo olusturmak 
-Olusturulan tablodan icerisindeki verilerle beraber yeni tablo oluşturmak. Aslinda bunu bir tablonun yedegini olusturmak icin yapariz.
-
-## Var olan Tablodan verilerileriyle beraber yeni tablo olusturmak Soz Dizimi 
+## Var olan Tablodan verilerileriyle beraber yeni tablo olusturmak - CREATE TABLE … AS
+Olusturulan tablodan icerisindeki verilerle beraber yeni tablo oluşturmak. Aslinda bunu bir tablonun yedegini olusturmak icin yapariz. **CREATE TABLE <new_table_name> AS** anahtar kelimesi kullanarak yapariz.
+✔️ Var olan bir tablonun veya sorgunun sonucunu al
+✔️ Yeni bir tablo olarak kaydet. 
+ 
+## Var olan Tablodan verilerileriyle beraber yeni tablo olusturmak - CREATE TABLE … AS Soz Dizimi 
 ```sql
 CREATE TABLE <new_table_name> AS
 SELECT * FROM <old_table_name>
 ```
-## Var olan Tablodan verilerileriyle beraber yeni tablo olusturmak Ornek Kullanim
+## Var olan Tablodan verilerileriyle beraber yeni tablo olusturmak - CREATE TABLE … AS Ornek Kullanim
 
 ```sql
 CREATE TABLE author3 AS
