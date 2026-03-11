@@ -34,6 +34,9 @@ CREATE TABLE book (
 Yukarıda bulunan görselimizde de gördüğünüz gibi STUDENT tablosunda bulunan **courseId** sütunu FOREIGN KEY yapısındadır ve başka bir tablo olan "Course" tablosundaki **courseId** sütununa referans verir.
 
 ### Ornek Kullanim
+
+**JOIN = İki tabloyu PK–FK ilişkisine göre birleştirmek**
+
 Hem book tablosundan hemde author tablosundan bilgi istersek **JOIN <table_name> ON <table_name.sutun_name> = <table_name.sutun_name** yapmamiz gerekir
 
 <img width="1442" height="268" alt="image" src="https://github.com/user-attachments/assets/87c7fddb-6774-43ab-a44d-f0d8076a1d0b" />
