@@ -67,11 +67,11 @@ WHERE <koşul_adı>;
 
 ```sql
 DELETE FROM my_apps
-WHERE name = 'Tresom';
+WHERE name = 'Tresom'; -- Eğer aynı isimden birden fazla satır varsa, hepsi silinir. Tek bir satır silmek istiyorsan genelde id üzerinden silmek daha güvenlidir.
+
 ```
 ---
 
 ## REFERNCES
 1. [W3Schools SQL UPDATE](https://www.w3schools.com/sql/sql_update.asp)
 2. [W3Schools SQL DELETE](https://www.w3schools.com/sql/sql_delete.asp)
-3. []
