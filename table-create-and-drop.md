@@ -65,7 +65,7 @@ VALUES
     ('Necip','Kisakurek','fazilkisakurek@gmail.com','1921-12-25');
 ```
 
-## Var olan Tablodan yeni tablo olusturmak - LIKE
+## Var olan Tablodan yeni tablo olusturmak (Veriler aktarılmaz!)- LIKE
 Oluşturduğumuz tablodan yeni bir tablo olusturmak ve olusturacagimiz tablonun olustudugumzu tablo ile ayni yapida olmasi icin ama veriler ayni olmaz hatta yeni tabloda veri olmadan olusmus gelir **LIKE** anahtar kelimesi kullanılır.
 
 ### Var olan Tablodan(verisi olmadan) yeni tablo olusturmak - LIKE Söz Dizimi
