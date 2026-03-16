@@ -29,7 +29,7 @@ CREATE TABLE <tablo_adı> (
 
 4. Tablo detaylarını görmek için
 
-\d+ sequrence bilgisi ile gosterir
+\d+ sequence bilgisi ile gosterir (varchar vs char , text serial goib type lari ghosteri nullable vs gosterir )
 ```sql
 \d+ <tablo_adı>
 ```
