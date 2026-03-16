@@ -41,7 +41,7 @@ Bu ifade 10.0 değerini tam sayıya dönüştürür.
 
 📌 Özet
 - Tam sayılar için → SMALLINT, INTEGER, BIGINT
-- Ondalıklı ama yaklaşık değerler için → REAL, DOUBLE PRECISION
+- Ondalıklı ama yaklaşık değerler için → REAL(FLOAT4), DOUBLE PRECISION(FLOAT8)
 - Kesin ondalıklı değerler (para, finans) için → NUMERIC, DECIMAL
 
 <img width="553" height="725" alt="image" src="https://github.com/user-attachments/assets/290dd7a1-d68e-4f36-bc80-8d71112757c8" />
