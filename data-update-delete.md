@@ -1,4 +1,4 @@
-# Tablo Verilerini Güncellemek (UPDATE - DELETE)
+# Tablo Verilerinin Satirlarini Güncellemek (UPDATE - DELETE)
 
 Bir tabloda bulunan verileri güncellemek veya silmek için öncelikle örnek bir tablo oluşturup içine 5 date veri yerleştireceğim.
 
@@ -18,7 +18,7 @@ INSERT INTO my_apps (id, name, price) values (5, 'Y-find', '$9.14');
 ```
 ## UPDATE
 
-**UPDATE** anahtar kelimesi sayesinde tablomuzda bulunan verileri güncelleyebiliriz.
+**UPDATE** anahtar kelimesi sayesinde tablomuzda bulunan **Satirdaki verileri** güncelleyebiliriz.
 
 ### UPDATE Söz Dizimi
 ```sql
@@ -29,7 +29,7 @@ SET <desütun_adı> = 'değer',
 WHERE <koşul_adı>;
 ```
 ### UPDATE Örnek Kullanım
-**my_apps** tablosunda bulunan ve id 2' ye eşit olan verimizin name sütunundaki degerini 'Mayak' price sütunundaki değerini '$5.22' ile değiştirelim.
+**my_apps** tablosunda bulunan ve id 2' ye eşit olan verimizin name sütunundaki satir degerini 'Mayak' price sütunundaki satir değerini '$5.22' ile değiştirelim.
 
 ```sql
 UPDATE my_apps
@@ -55,7 +55,7 @@ RETURNING *;
 ```
 
 ## DELETE
-**DELETE** anahtar kelimesi sayesinde tablomuzda bulunan verileri silebiliriz.
+**DELETE** anahtar kelimesi sayesinde tablomuzda bulunan **satirdaki verileri** silebiliriz.
 
 ### DELETE Söz Dizimi
 ```sql
