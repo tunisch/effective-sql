@@ -1,7 +1,7 @@
 # NOT NULL ve ALTER
 
 ## NOT NULL
-Birçok durumda bizler herhangi bir sütuna yazılacak olan verilere belirli kısıtlamalar getirmek isteriz. Örneğin yaş sütünunda sadece sayısal verilerin olmasını isteriz ya da kullanıcı adı sütununda bilinmeyen (NULL) değerlerin olasını istemeyiz. Bu gibi durumlarda ilgili sütunda **CONSTRAINT** kısıtlama yapıları kullanılır.
+Birçok durumda bizler herhangi bir sütuna yazılacak olan verilere belirli kısıtlamalar getirmek isteriz. Örneğin yaş sütünunda sadece sayısal verilerin olmasını isteriz ya da kullanıcı adı sütununda bilinmeyen (NULL) değerlerin olmasını istemeyiz. Bu gibi durumlarda ilgili sütunda **CONSTRAINT** kısıtlama yapıları kullanılır.
 
 **NULL** bilinmeyen veri anlamındadır. **Boş string veya 0 verilerinden farklıdır**. Şu şekilde bir senaryo düşünelim bir kullanıcının email hesabı yoksa buradaki veriyi boş string şeklinde düşünebiliriz. Acak eğer kullanıcının maili var ancak ne olduğunu bilmiyorsak bu durumda o veri NULL (bilinmeyen) olarak tanımlanabilir.
 
