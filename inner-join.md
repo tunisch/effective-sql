@@ -2,8 +2,27 @@
 
 Veraitabanları çoğunlukla birbiri ile ilşkili olan tablolardan oluşur. Bu birbiri ile ilişkili olan tablardaki verileri farklı JOIN yapıları kullanarak sanal olarak birleştirip daha anlamlı veriler haline getirebiliriz.
 
+JOIN, iki veya daha fazla tabloyu ortak bir sütun üzerinden birleştirmek için kullanılır.
+SQL’de JOIN yazıldığında varsayılan olarak:
+
+```sql
+JOIN = INNER JOIN
+```
+yani sadece eşleşen kayıtlar getirilir.
+
+## JOIN (Normal JOIN
+JOIN tek başına yazıldığında:
+```sql
+SELECT *
+FROM book
+JOIN author ON book.author_id = author.author_id;
+```
+Bu, INNER JOIN ile tamamen aynıdır.
+
 ## INNER JOIN
-INNER JOIN yapısı sayesinde birbiriyle ilişkili olan tabloların birbiriyle eşleşen (kesişen) verilerini sıralayabiliriz. Senaryomuzda kitapları gösterdiğimiz **book** tablosu ve yazarları gösterdiğimiz **author**
+Sadece iki tabloda da eşleşen kayıtları getirir.
+
+**INNER JOIN** yapısı sayesinde birbiriyle ilişkili olan tabloların birbiriyle eşleşen (kesişen) verilerini sıralayabiliriz. Senaryomuzda kitapları gösterdiğimiz **book** tablosu ve yazarları gösterdiğimiz **author**
 tablosu var, author tablosunun id sütunuyla book tablosunun author_id sütunlarında bulunan veriler sayesinde her iki tabloya ait bilgilerden daha anlamlı sonuçları elde edebiliriz.
 
 Aşağıdaki SQL sorgusunda kitap isimlerini yazar isim ve soyisimler ile birlikte gösterebiliriz.
