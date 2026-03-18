@@ -2,7 +2,11 @@
 
 LEFT JOIN yapısındaki tablo birleştirmesinde, birleştirme işlemi tablo 1 (soldaki tablo) üzerinden gerçekleştirilir. Senaryomuzu şu şekilde düşünelim eğer tablo 1 olarak book tablosunu aldığımızda öncelikle `book` tablosundaki ilgili sütundaki tüm verileri alacağız, sonrasında bu verilerin eşleştiği ilgili tablo 2 sütunundaki verileri alacağız. Tablo 1 de olup Tablo 2 de olmayan veriler için **NULL** değeri kullanılır.
 
-Left joinde tablo sirasi onemlidir.
+- Left joinde tablo sirasi onemlidir.
+- LEFT JOIN de FROM’dan sonra yazılan sol tablo (book) → her zaman tamamen gelir.
+- Authors’ta eşleşme yoksa → Author tarafı `NULL` olur.
+    - 📌 Sonuç: Yazari olmayan kitaplar bile listelenir.
+
 
 Aşağıdaki SQL sorgusunda kitap isimlerinin tamamını alıyoruz, sonrasında bu kitap isimleriyle eşleşebilen yazar isimlerini alıyoruz. Kitap isimlerine karşılık olmayan yazarlar için NULL değeri alıyoruz.
 
