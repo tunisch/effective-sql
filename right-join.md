@@ -17,7 +17,7 @@ Yukarıdaki sorgumuz sonucunda göreceğimiz gibi yazarlara ait olmayan kitaplar
 
 <img width="305" height="231" alt="image" src="https://github.com/user-attachments/assets/c3c89bd2-48e6-46a9-b08a-62c105eb9f18" />
 
-Yukarıdaki görselimizde de gördüğümüz üzere LEFT JOIN tablolar arasındaki eşleşmeyi tablo 1 (soldaki tablo) üzerinden belirlenir.
+Yukarıdaki görselde RIGHT JOIN'in eşleşmeyi sağ tablo (tablo 2) üzerinden belirlediğini görüyoruz.
 
 ## RIGHT JOIN Söz Dizimi
 
