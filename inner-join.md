@@ -1,6 +1,6 @@
 # JOIN Kavramı (Birleştirme)
 
-Veraitabanları çoğunlukla birbiri ile ilşkili olan tablolardan oluşur. Bu birbiri ile ilişkili olan tablardaki verileri farklı JOIN yapıları kullanarak sanal olarak birleştirip daha anlamlı veriler haline getirebiliriz.
+Veritabanları çoğunlukla birbiri ile ilişkili olan tablolardan oluşur. Bu birbiri ile ilişkili olan tablardaki verileri farklı JOIN yapıları kullanarak sanal olarak birleştirip daha anlamlı veriler haline getirebiliriz.
 
 JOIN, iki veya daha fazla tabloyu ortak bir sütun üzerinden birleştirmek için kullanılır.
 SQL’de JOIN yazıldığında varsayılan olarak:
