@@ -21,7 +21,7 @@ INNER JOIN author ON book.author_id = author.author_id;
 Mantık:
 - book.author_id = author.author_id eşleşiyorsa → gelir
 - Eşleşmiyorsa → gelmez
-Bu JOIN türü en çok kullanılan ve en güvenli olanıdır.
+Bu JOIN türü en çok kullanılan JOIN türlerinden biridir.
 
 📌 3. JOIN (Normal JOIN)
 JOIN tek başına yazıldığında:
