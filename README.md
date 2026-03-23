@@ -76,13 +76,6 @@ Bu nedenle dikkatli kullanılmalıdır.
 
 📌 8. Virgülle JOIN Kullanımı (Eski Yöntem)
 Şu sorgu:
-```sql
-SELECT * FROM book, author;
-```
-
-CROSS JOIN ile aynıdır.
-Yani tüm satırları çarpar.
-Modern SQL’de kullanılması önerilmez.
 
 
 
