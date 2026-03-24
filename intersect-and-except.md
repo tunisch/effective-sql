@@ -69,6 +69,49 @@ FROM <table2>
 
 EXCEPT operatörü bize ilk sorguda olan ancak ikinci sorguda olmayan veriler içerisindeki tekrar edenleri göstermez. Tekrar edenleri görmek için EXCEPT ALL kullanırız.
 
+## 3. Alternatif: FULL OUTER JOIN + WHERE
+
+Bazı kişiler EXCEPT kullanmak istemez, o zaman şöyle yapılır:
+```sql
+SELECT *
+FROM A
+FULL OUTER JOIN B ON A.id = B.id
+WHERE A.id IS NULL;   -- sadece B’de olanlar
+```
+
+WHERE A.id IS NULL neyi seçiyor?
+
+Bu filtre şunu söylüyor:
+
+“A tarafında eşleşme olmayan satırları getir.”
+
+A.id NULL ise bu şu demektir:
+- Bu satır A’da yok
+- Ama B’de var (çünkü FULL OUTER JOIN tüm B satırlarını da getiriyor)
+Dolayısıyla sonuç:
+
+👉 Sadece B’de olup A’da olmayan kayıtlar
+
+🔥 Kısacası:
+- A.id IS NULL → A’da yok, B’de var
+- B.id IS NULL → B’de yok, A’da var
+
+👉 3 sadece B’de var
+
+🎯 Senin kafanı karıştıran nokta şu:
+
+“A.id NULL olanları filtrele” deyince sanki “A’daki NULL değerleri getir” gibi geliyor.
+
+Ama aslında:
+- Bu NULL A tablosundan gelen bir NULL değil
+- JOIN sonucu oluşan bir NULL
+- Yani “A’da karşılığı yok” anlamına geliyor
+
+
+
+--- 
+
 **OZETLE :**
 > Birden daha fazla select sorgusu yaptigimizda ayni sanal tablo icerisinde birlestirmek istersek **UNION** operatoru , kesisimlerini almak istersek **INTESECT** , ancak ilk sorguda olan ikinci sorguda olmayan verileri istersek **EXCEPT** operatorunu kullanacagiz.
+
 
