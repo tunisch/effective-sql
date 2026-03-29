@@ -1,6 +1,14 @@
 # Alt Sorgular (Subqueries)
 
-Bir sorgu içerisinde, o sorgunun ihtiyaç duyduğu veri veya verileri getiren sorgulardır.
+- Bir sorgu içerisinde, o sorgunun ihtiyaç duyduğu veri veya verileri getiren sorgulardır.
+- Bir SQL sorgusu içinde, başka bir sorgunun sonucunu kullanan yapılara alt sorgu (subquery) denir.
+  
+Alt sorgular genellikle:
+- WHERE içinde filtreleme yapmak
+- SELECT içinde hesaplama yapmak
+- FROM içinde geçici tablo oluşturmak
+için kullanılır.
+
 
 ## Alt Sorgu Kullanımı
 
@@ -38,7 +46,8 @@ Yukardaki sorduga once subquery yani -> select page_number from book where title
 > assagidaki soroguda 2 tane subquery vardir
 <img width="593" height="720" alt="Ekran görüntüsü 2026-03-26 192453" src="https://github.com/user-attachments/assets/3eb971b8-a37f-48bf-95b8-c4c4c236300b" />
 
-> title,page_number ve max page_number ayni sekilde yazdirmak istersek;
+> Birden Fazla Alt Sorgu Kullanmak
+title,page_number ve max page_number ayni sekilde yazdirmak istersek;
 
 ```sql
 select title,  page_number, (select MAX(page_number) FROM book)
@@ -73,3 +82,24 @@ WHERE page_number >
   WHERE title = 'Gulun Adi'
 );
 ```
+> “Sayfa sayısı, ‘Gülün Adı’ kitabının sayfa sayısından büyük olan kitapları getir.”
+
+## IN operatörü
+**IN** operatörü liste döndüren subquery’ler için tasarlanmıştır.
+- Yani alt sorgudan dönen tüm değerleri tek tek karşılaştırır.
+- Alt sorgu 1 satır döndürür → çalışır
+- 10 satır döndürür → yine çalışır
+
+```sql
+SELECT *
+FROM CITY
+WHERE COUNTRYCODE IN (
+    SELECT COUNTRYCODE
+    FROM CITY
+    WHERE COUNTRYCODE = 'JPN'
+);
+```
+Bu sorgu:
+> “COUNTRYCODE değeri, alt sorgunun döndürdüğü değerlerden biri mi?
+
+diye kontrol eder.
