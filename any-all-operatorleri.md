@@ -2,6 +2,21 @@
 
 Any ve All operatörleri alt sorugularda sıklıkla kullanılır ve tek bir sütunda bulunan bir değerle bir değer dizisinin bırden daha fazla degerlerını karşılaştırılmasını sağlar.
 
+<img width="640" height="658" alt="image" src="https://github.com/user-attachments/assets/b919c1ae-1782-44cc-9912-1c53aefe7bf0" />
+
+```sql
+SELECT first_name, last_name
+FROM author
+WHERE id =
+(
+  SELECT id
+  FROM book
+   WHERE title = 'Abe Lincoln in Illinois' OR title = 'Saving Shiloh'
+);
+```
+> = ANY ile 4 veya 5 e esit olanlari vermis olur herhangi bir kosul dogru olunca verir.!
+
+
 ## ANY Operatörü
 
 Alt sorgudan gelen herhangi bir değer koşulu sağlaması durumunda TRUE olarak ilgili değerin koşu sağlamasını sağlar. **bookstore** veritabanında yapmış olduğumuz aşağıdaki sorguyu inceleyelim.
@@ -13,7 +28,7 @@ WHERE id = ANY
   SELECT id
   FROM book
   WHERE title = 'Abe Lincoln in Illinois' OR title = 'Saving Shiloh'
-)
+);
 ```
 
 Yukarıda görmüş olduğunuz gibi alt sorgudan gelebilecek potansiye iki id değeri var, bu id değerinin her ikisi de birbirinden bağımsız olarak ana sorgudaki id sütununda bulunan değerler ile eşleştiği için sorgu sonucunda oluşan sana tabloda id değeri 4 ve 5 olan yazarlara ait first_name ve last_name değerlerini göreceğiz.
