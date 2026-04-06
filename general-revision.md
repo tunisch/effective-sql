@@ -4,10 +4,16 @@ Bu çalışmamamızda şimdiye kadar üzerine konuştuğumuz tüm konuları 5 fa
 
 
 
-- film tablosundan 'K' karakteri ile başlayan en uzun ve replacenet_cost u en düşük 4 filmi sıralayınız.
+- film tablosundan 'K' karakteri ile başlayan en uzun ve replacement_cost u en düşük 4 filmi sıralayınız.
+
+<img width="768" height="348" alt="image" src="https://github.com/user-attachments/assets/ad40134e-cb67-4590-b472-070f674eac40" />
 
 ```sql
-
+SELECT title, length, replacement_cost
+FROM film
+WHERE title LIKE 'K%'
+ORDER BY length DESC, replacement_cost ASC
+LIMIT 4;
 ```
 
 
